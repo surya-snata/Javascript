@@ -238,4 +238,7 @@ const array6 = ["A", "BC", "Pramod", "Pablo"];
 console.log(array6.sort()); // [ 'A', 'BC', 'Pablo', 'Pramod' ]
 
 // Descending Order :
-console.log(array6.reverse()); // [ 'Pramod', 'Pablo', 'BC', 'A' ]
+console.log(array6.sort().reverse()); // [ 'Pramod', 'Pablo', 'BC', 'A' ]
+
+// or
+console.log(array6.sort((a, b) => b.localeCompare(a))); // [ 'Pramod', 'Pablo', 'BC', 'A' ]
